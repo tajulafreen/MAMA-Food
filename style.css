@@ -1,158 +1,281 @@
 .logo {
-width: 90px;
-}
-.background-m{
-   background-image: url(./head-back.jpg);
-   background-repeat: no-repeat;
-   background-size: cover;
-   background-position: center;
-   
+  width: 90px;
 }
 
-.heading{
-               
- background-image: url(./h1image.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-clip: content-box;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+@media (max-width: 768px) {
+  .logo.active {
+    visibility: hidden;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    margin-left: 46%;
+  }
+
+  .hamburger .line {
+    width: 30px;
+    height: 3px;
+    margin: 6px 0;
+  }
+
+  .menu-section {
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    left: 0;
+    width: 0;
+    background-color: #fff;
+    transition: 0.5s;
+    height: 0;
+    overflow: hidden;
+    align-items: ceter;
+    opacity: 0;
+  }
+
+  .menu-section.active {
+    height: 700px;
+    opacity: 1;
+    padding-left: 3%;
+    width: 110%;
+    visibility: visible;
+  }
+
+  .hide.active {
+    visibility: hidden;
+    display: none;
+  }
+
+  .hamburger.active .line:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .line:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .line:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .desktop {
+    visibility: hidden;
+    height: 0;
+    width: 0;
+  }
+
+  .fi-h {
+    padding: 15%;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: auto;
+  }
+
+  .trans-bag {
+    margin: 3%;
+  }
+
+  .join-btn {
+    width: 70%;
+    background-color: rgb(200, 52, 52);
+    border: none;
+    border-radius: 5px;
+    margin: 3% 10% 10% 15%;
+    height: 70px;
+    padding: 5%;
+  }
+
+  .community {
+    font-size: 18px;
+    color: aliceblue;
+  }
 }
 
-.p-text{
-   background-color: #fafdfc;
-   color: rgb(89, 87, 87);
-}
-.ad-1, .ad-2{
-   color: rgb(89, 87, 87);
-   background-color: #fafdfc;
-   width: fit-content;
+.background-m {
+  background-image: url(./head-back.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
-.nav1{
-   list-style-type: none;
-   display: flex;
-   flex-direction: row;
-   float: right;
-}
-.fa, .nav-item{
-   color: #fafdfc;
-  
-}
-.program{
-   background-image: url(./med-back.jpg);
-   background-repeat: no-repeat;
-   background-size: cover;
-   background-position: center;
-   width: 100%;
-}
-.sec-head{
-   padding: 5%;
-   color: aliceblue;
+.heading {
+  background-image: url(./h1image.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-clip: content-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.cards{
-   gap: 2%;
-   padding-top: 2%;
+.p-text {
+  background-color: #fafdfc;
+  color: rgb(89, 87, 87);
 }
-.trans-bag{
+
+.ad-1,
+.ad-2 {
+  color: rgb(89, 87, 87);
+  background-color: #fafdfc;
+  width: fit-content;
+}
+
+.nav1 {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  float: right;
+}
+
+.fa,
+.nav-item {
+  color: #fafdfc;
+}
+
+.program {
+  background-image: url(./med-back.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+
+.sec-head {
+  padding: 5%;
+  color: aliceblue;
+}
+
+.cards {
+  gap: 2%;
+  padding-top: 2%;
+}
+
+.trans-bag {
   background-color: rgba(106, 105, 105, 0.308);
   display: flex;
   align-items: center;
- 
   height: fit-content;
   gap: 10px;
 }
-.chefs{
-   padding: 3%;
-}
-.partners-sec{
-   background-color: rgb(48, 47, 47);
-}
-.partner{
-   padding: 3%;
-}
-.part-nav{
-   display: flex;
-   flex-direction: row;
-   list-style-type: none;
-   padding: 3% ;
-   justify-content: center;
-   gap: 5%;
-}
-.image{
-   width: 90px;
-}
-.foot-flex{
-   display: flex;
-   flex-direction: row;
-   gap: 5%;
-   list-style-type: none;
-   justify-content: space-between;
-   align-items: center;
-   width: 60%;
-   padding: 5%;
-}
-.card-container{
-   display: flex;
-   width: 35%;
-   justify-content: space-between;
-   list-style-type: none;
 
+.chefs {
+  padding: 3%;
 }
-.chef-image{
-   width: 120px;
-   padding: 3%;
+
+.partners-sec {
+  background-color: rgb(48, 47, 47);
 }
-.teach-text{
-   list-style-type: none;
-   display: flex;
-   flex-direction: column;
-   justify-content: space-between;
+
+.partner {
+  padding: 3%;
 }
+
+.part-nav {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  padding: 3%;
+  justify-content: center;
+  gap: 5%;
+}
+
+.image {
+  width: 90px;
+}
+
+.foot-flex {
+  display: flex;
+  flex-direction: row;
+  gap: 5%;
+  list-style-type: none;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+  padding: 5%;
+}
+
+.card-container {
+  display: flex;
+  width: 35%;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.chef-image {
+  width: 120px;
+  padding: 3%;
+}
+
+.teach-text {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 @media (min-width: 767.9px) {
-   
-   .fi-h{
-      padding:13% ;
-      
-      width: 90%;
-   }
-   .heading{
-      font-weight: 800;
-   font-size: 50px;  
-   }
-   .quote{
-      font-weight: 400;
-      font-size: 30px;
-   }
-   .p-text{
-      width: 80%;
-   }
-   .ad-1{
-      font-weight: 700;
-      font-size: 35px;
-   }
-   .ad-2{
-      font-size: 20px;
-   }
-   .trans-bag{
-      flex-direction: column;
-      width: 20%; 
-    }
-    .cards{
-      width: 70%;
-   }
-   .teacher-item{
-      display: grid;
-      grid-template-columns: repeat(2, 40%);
-      grid-template-rows: repeat(3, 1fr);
-   }
+  .hamburger {
+    visibility: hidden;
+    height: 0;
+  }
+
+  .mobile {
+    visibility: hidden;
+    height: 0;
+    width: 0;
+  }
+
+  .fi-h {
+    padding: 13%;
+    width: 90%;
+  }
+
+  .heading {
+    font-weight: 800;
+    font-size: 50px;
+  }
+
+  .quote {
+    font-weight: 400;
+    font-size: 30px;
+  }
+
+  .p-text {
+    width: 80%;
+  }
+
+  .ad-1 {
+    font-weight: 700;
+    font-size: 35px;
+  }
+
+  .ad-2 {
+    font-size: 20px;
+  }
+
+  .trans-bag {
+    flex-direction: column;
+    width: 20%;
+  }
+
+  .cards {
+    width: 70%;
+  }
+
+  .teacher-item {
+    display: grid;
+    grid-template-columns: repeat(2, 40%);
+    grid-template-rows: repeat(3, 1fr);
+  }
 }
 
 @media (min-width: 900px) {
-   .heading{
-      font-weight: 900;
-   font-size: 60px;  
-   }
+  .heading {
+    font-weight: 900;
+    font-size: 60px;
+  }
 }
