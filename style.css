@@ -6,8 +6,7 @@ width: 90px;
    background-repeat: no-repeat;
    background-size: cover;
    background-position: center;
-   height: 800px;
-  position: absolute;
+   
 }
 
 .heading{
@@ -42,21 +41,73 @@ width: 90px;
   
 }
 .program{
-   background-color: black;
-   height: 800px;
+   background-image: url(./med-back.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
    width: 100%;
+}
+.sec-head{
+   padding: 5%;
+   color: aliceblue;
+}
+
+.cards{
+   gap: 2%;
+   padding-top: 2%;
+}
+.trans-bag{
+  background-color: rgba(106, 105, 105, 0.308);
+  display: flex;
+  align-items: center;
+ 
+  height: fit-content;
+  gap: 10px;
+}
+.chefs{
+   padding: 3%;
+}
+.partners-sec{
+   background-color: rgb(48, 47, 47);
+}
+.partner{
+   padding: 3%;
+}
+.part-nav{
+   display: flex;
+   flex-direction: row;
+   list-style-type: none;
+   padding: 3% ;
+   justify-content: center;
+   gap: 5%;
+}
+.image{
+   width: 90px;
+}
+.foot-flex{
+   display: flex;
+   flex-direction: row;
+   gap: 5%;
+   list-style-type: none;
+   justify-content: space-between;
+   align-items: center;
+   width: 60%;
+   padding: 5%;
 }
 @media (min-width: 767.9px) {
    
-   
    .fi-h{
-      margin-top: 10%;
-      margin-left: 13%;
-      width: 60%;
+      padding:13% ;
+      
+      width: 90%;
    }
    .heading{
-      font-weight: 900;
-   font-size: 60px;  
+      font-weight: 800;
+   font-size: 50px;  
+   }
+   .quote{
+      font-weight: 400;
+      font-size: 30px;
    }
    .p-text{
       width: 80%;
@@ -68,8 +119,18 @@ width: 90px;
    .ad-2{
       font-size: 20px;
    }
+   .trans-bag{
+      flex-direction: column;
+      width: 20%; 
+    }
+    .cards{
+      width: 70%;
+   }
 }
 
-@media (max-width: 768px) {
-   
+@media (min-width: 900px) {
+   .heading{
+      font-weight: 900;
+   font-size: 60px;  
+   }
 }
