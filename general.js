@@ -56,19 +56,20 @@ const chef = [
 ];
 
 const container = document.querySelector('.empty-container');
-const teacher = () => {
+const teacher = (e) => {
   const card = document.createElement('div');
   card.classList = 'teacher-item';
   card.innerHTML += `
    <ul class="card-container">
    <li>
-   <img src="${chef.Image}" alt="image" class="chef-image">
+   <img src="${e.Image}" alt="image" class="chef-image">
    </li>
    <li>
    <ul class="teach-text">
-   <li>${chef.name}</li>
-   <li>${chef.title}</li>
-   <li>${chef.about}</li>
+   <li><p class="chef-n text-dark"> ${e.name}</p></li>
+   <li><p class="text-danger chef-t" >${e.title}</p></li>
+
+   <li><p class="chef-p">${e.about}</p></li>
    </ul>
    </li>
    </ul>
