@@ -94,6 +94,23 @@ width: 90px;
    width: 60%;
    padding: 5%;
 }
+.card-container{
+   display: flex;
+   width: 35%;
+   justify-content: space-between;
+   list-style-type: none;
+
+}
+.chef-image{
+   width: 120px;
+   padding: 3%;
+}
+.teach-text{
+   list-style-type: none;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
 @media (min-width: 767.9px) {
    
    .fi-h{
@@ -125,6 +142,11 @@ width: 90px;
     }
     .cards{
       width: 70%;
+   }
+   .teacher-item{
+      display: grid;
+      grid-template-columns: repeat(2, 40%);
+      grid-template-rows: repeat(3, 1fr);
    }
 }
 
