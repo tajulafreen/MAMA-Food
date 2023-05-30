@@ -143,6 +143,14 @@
   .image {
     width: 50px;
   }
+  .tesimones{
+   flex-direction: column;
+   list-style-type: none;
+
+  }
+  .test, .test1{
+   margin: 3%;
+  }
 }
 
 .background-m {
@@ -203,30 +211,25 @@
   padding: 5%;
 }
 
-.tesimones {
-  width: 70%;
-  margin: auto;
-  list-style-type: none;
-  gap: 3%;
-}
+
 
 .test {
-  width: 390px;
+  
   background-color: #ec4427cb;
   background-image: url('./test1.jpg');
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-blend-mode: multiply;
   background-position: center;
 }
 
 .test1 {
-  width: 390px;
+ 
   background-color: #ec4427cb;
-  height: 250px;
+  
   background-image: url('./test2.jpg');
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-blend-mode: multiply;
   background-position: center;
 }
@@ -401,6 +404,15 @@
   .foot-flex {
     width: 80%;
   }
+  .tesimones {
+   width: 70%;
+   margin: auto;
+   list-style-type: none;
+   gap: 3%;
+ }
+ .test,.test1{
+   width: 390px;
+ }
 }
 
 @media (min-width: 900px) {
