@@ -1,0 +1,460 @@
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.logo {
+  width: 90px;
+}
+
+@media (max-width: 767.9px) {
+  .logo.active {
+    visibility: hidden;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    margin-left: 46%;
+  }
+
+  .hamburger .line {
+    width: 30px;
+    height: 3px;
+    margin: 6px 0;
+  }
+
+  .menu-section {
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    left: 0;
+    width: 0;
+    background-color: #fff;
+    transition: 0.5s;
+    height: 0;
+    overflow: hidden;
+    align-items: ceter;
+    opacity: 0;
+  }
+
+  .menu-section.active {
+    height: 700px;
+    opacity: 1;
+    padding-left: 3%;
+    width: 110%;
+    visibility: visible;
+  }
+
+  .hide.active {
+    visibility: hidden;
+    display: none;
+  }
+
+  .hamburger.active .line:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .line:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .line:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .desktop {
+    visibility: hidden;
+    height: 0;
+    width: 0;
+  }
+
+  .fi-h {
+    padding-top: 15%;
+    padding-bottom: 15%;
+    width: 100%;
+  }
+
+  .chef-n {
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .chef-t {
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  .chef-p {
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  .more {
+    width: 98%;
+    height: 40px;
+  }
+
+  .heading {
+    font-weight: 600;
+    font-size: 30px;
+  }
+
+  .quote {
+    font-weight: 400;
+    font-size: 22px;
+  }
+
+  .p-text {
+    width: 100%;
+  }
+
+  .ad-1 {
+    font-weight: 400;
+    font-size: 22px;
+  }
+
+  .ad-2 {
+    font-size: 20px;
+    padding-left: 10%;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: auto;
+  }
+
+  .chef-3,
+  .chef-4,
+  .chef-5,
+  .chef-6 {
+    visibility: hidden;
+    display: none;
+    opacity: 0;
+  }
+
+  .trans-bag {
+    margin: 3%;
+  }
+
+  .join-btn {
+    width: 70%;
+    background-color: rgb(200, 52, 52);
+    border: none;
+    border-radius: 5px;
+    margin: 3% 10% 10% 15%;
+    height: 70px;
+    padding: 5%;
+  }
+
+  .about-img-container {
+    padding-bottom: 15%;
+    width: 350px;
+  }
+
+  .community {
+    font-size: 18px;
+    color: aliceblue;
+  }
+
+  .image {
+    width: 50px;
+  }
+
+  .tesimones {
+    flex-direction: column;
+    list-style-type: none;
+  }
+
+  .test,
+  .test1 {
+    margin: 3%;
+  }
+}
+
+.background-m {
+  background-image: url(./head-back.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.heading {
+  background-image: url(./h1image.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-clip: content-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.p-text {
+  background-color: #fafdfc;
+  color: rgb(89, 87, 87);
+}
+
+.about-text {
+  background-color: #fafdfc;
+  margin: auto;
+  width: 40%;
+}
+
+.ad-1,
+.ad-2 {
+  color: rgb(89, 87, 87);
+  background-color: #fafdfc;
+  width: fit-content;
+}
+
+.about-logo-text {
+  padding: 7%;
+  width: 70%;
+  margin: auto;
+}
+
+.about-logo {
+  width: 290px;
+  height: 230px;
+  border-color: rgb(107, 184, 184);
+  border-radius: 5px;
+  border: 1px;
+  margin: 0;
+}
+
+.logo-about {
+  padding: 10%;
+}
+
+.reveiw {
+  padding: 5%;
+}
+
+.test {
+  background-color: #ec4427cb;
+  background-image: url('./test1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+  background-position: center;
+}
+
+.test1 {
+  background-color: #ec4427cb;
+  background-image: url('./test2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+  background-position: center;
+}
+
+.nav1 {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  float: right;
+}
+
+.lines {
+  border: 2px solid rgb(247, 14, 14);
+  border-radius: 3px;
+  width: 65px;
+  margin: auto;
+}
+
+.fa,
+.nav-item {
+  color: #fafdfc;
+}
+
+.program {
+  background-image: url(./med-back.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+
+.sec-head {
+  padding: 5%;
+  color: aliceblue;
+}
+
+.cards {
+  gap: 2%;
+  padding-top: 2%;
+}
+
+.trans-bag {
+  background-color: rgba(106, 105, 105, 0.308);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.chefs {
+  padding: 3%;
+}
+
+.partners-sec {
+  background-color: rgb(48, 47, 47);
+}
+
+.partner {
+  padding: 3%;
+}
+
+.part-nav {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  padding: 3%;
+  justify-content: center;
+  gap: 5%;
+}
+
+.foot-flex {
+  display: flex;
+  flex-direction: row;
+  gap: 5%;
+  list-style-type: none;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 5%;
+}
+
+.card-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.chef-image {
+  width: 150px;
+}
+
+.teach-text {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .hamburger {
+    visibility: hidden;
+    height: 0;
+  }
+
+  .desktop {
+    visibility: visible;
+  }
+
+  .mobile {
+    visibility: hidden;
+    height: 0;
+    width: 0;
+  }
+
+  .fi-h {
+    padding: 13%;
+    width: 90%;
+  }
+
+  .chef-n {
+    font-size: 26px;
+    font-weight: 600;
+  }
+
+  .chef-t {
+    font-size: 18px;
+    font-weight: 600px;
+  }
+
+  .heading {
+    font-weight: 800;
+    font-size: 50px;
+  }
+
+  .quote {
+    font-weight: 400;
+    font-size: 30px;
+  }
+
+  .p-text {
+    width: 80%;
+  }
+
+  .ad-1 {
+    font-weight: 700;
+    font-size: 35px;
+  }
+
+  .ad-2 {
+    font-size: 20px;
+  }
+
+  .about-img-container {
+    margin: auto;
+    width: 40%;
+  }
+
+  .trans-bag {
+    flex-direction: column;
+    width: 20%;
+  }
+
+  .cards {
+    width: 70%;
+  }
+
+  .empty-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 80%;
+  }
+
+  .image {
+    width: 90px;
+  }
+
+  .foot-flex {
+    width: 80%;
+  }
+
+  .tesimones {
+    width: 70%;
+    margin: auto;
+    list-style-type: none;
+    gap: 3%;
+  }
+
+  .test,
+  .test1 {
+    width: 390px;
+  }
+}
+
+@media (min-width: 900px) {
+  .heading {
+    font-weight: 900;
+    font-size: 60px;
+  }
+
+  .foot-flex {
+    width: 55%;
+  }
+
+  .about-img-container {
+    height: 350px;
+    margin: auto;
+    width: 40%;
+  }
+
+  .about-logo {
+    margin: 15%;
+  }
+}
