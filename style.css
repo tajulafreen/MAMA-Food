@@ -336,6 +336,10 @@
 }
 
 @media (min-width: 767.9px) {
+   .nav-section{
+      display: flex;
+      justify-content: space-between;
+   }
   .hamburger {
     visibility: hidden;
     height: 0;
