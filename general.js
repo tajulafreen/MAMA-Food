@@ -55,14 +55,15 @@ const chef = [
   },
 ];
 
-
 const container = document.querySelector('.empty-container');
 const teacher = (e) => {
   const card = document.createElement('div');
-  let count = 0;
+  const count = 0;
   card.classList = 'teacher-item';
+
   card.innerHTML += `
-   <ul class="card-container chef-${count + 1}">
+   <ul class="card-container chef-${count}">
+  
    <li>
    <img src="${e.Image}" alt="image" class="chef-image">
    </li>
@@ -76,7 +77,7 @@ const teacher = (e) => {
    </li>
    </ul>
    `;
-   count++;
+
   container.appendChild(card);
 };
 chef.forEach((e) => {
@@ -88,9 +89,9 @@ const chef4 = document.querySelector('.chef-4');
 const chef5 = document.querySelector('.chef-5');
 const chef6 = document.querySelector('.chef-6');
 const more = document.querySelector('.more');
-more.onclick = function more (){
-    chef3.classList.toggle('active')
-    chef4.classList.toggle('active')
-    chef5.classList.toggle('active')
-    chef6.classList.toggle('active')
-}
+more.onclick = function more() {
+  chef3.classList.toggle('active');
+  chef4.classList.toggle('active');
+  chef5.classList.toggle('active');
+  chef6.classList.toggle('active');
+};

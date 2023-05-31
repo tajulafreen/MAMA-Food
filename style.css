@@ -84,11 +84,12 @@
     font-size: 12px;
     font-weight: 400;
   }
-   .more{
-      width: 98%;
-      height: 40px;
-   }
-   
+
+  .more {
+    width: 98%;
+    height: 40px;
+  }
+
   .heading {
     font-weight: 600;
     font-size: 30px;
@@ -119,15 +120,20 @@
     justify-content: space-between;
     padding: auto;
   }
-  .chef-3,.chef-4,.chef-5,.chef-6{
-   visibility: hidden;
-   display: none;
-   opacity: 0;
+
+  .chef-3,
+  .chef-4,
+  .chef-5,
+  .chef-6 {
+    visibility: hidden;
+    display: none;
+    opacity: 0;
   }
+
   .trans-bag {
     margin: 3%;
   }
-   
+
   .join-btn {
     width: 70%;
     background-color: rgb(200, 52, 52);
@@ -151,13 +157,15 @@
   .image {
     width: 50px;
   }
-  .tesimones{
-   flex-direction: column;
-   list-style-type: none;
 
+  .tesimones {
+    flex-direction: column;
+    list-style-type: none;
   }
-  .test, .test1{
-   margin: 3%;
+
+  .test,
+  .test1 {
+    margin: 3%;
   }
 }
 
@@ -186,7 +194,7 @@
 .about-text {
   background-color: #fafdfc;
   margin: auto;
-  width: auto;
+  width: 40%;
 }
 
 .ad-1,
@@ -219,10 +227,7 @@
   padding: 5%;
 }
 
-
-
 .test {
-  
   background-color: #ec4427cb;
   background-image: url('./test1.jpg');
   background-repeat: no-repeat;
@@ -232,9 +237,7 @@
 }
 
 .test1 {
- 
   background-color: #ec4427cb;
-  
   background-image: url('./test2.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -336,10 +339,10 @@
 }
 
 @media (min-width: 767.9px) {
-   .nav-section{
-      display: flex;
-      justify-content: space-between;
-   }
+  .nav-section {
+    margin-left: 10%;
+  }
+
   .hamburger {
     visibility: hidden;
     height: 0;
@@ -350,7 +353,7 @@
     height: 0;
     width: 0;
   }
-  
+
   .fi-h {
     padding: 13%;
     width: 90%;
@@ -416,15 +419,18 @@
   .foot-flex {
     width: 80%;
   }
+
   .tesimones {
-   width: 70%;
-   margin: auto;
-   list-style-type: none;
-   gap: 3%;
- }
- .test,.test1{
-   width: 390px;
- }
+    width: 70%;
+    margin: auto;
+    list-style-type: none;
+    gap: 3%;
+  }
+
+  .test,
+  .test1 {
+    width: 390px;
+  }
 }
 
 @media (min-width: 900px) {
