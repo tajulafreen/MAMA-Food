@@ -72,7 +72,7 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 
-- [Live Demo Link](https://tajulafreen.github.io/first-capstone-project/)
+- [Live Demo Link](https://tajulafreen.github.io/MAMA-Food/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
